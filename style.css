@@ -1,0 +1,116 @@
+html,body{
+    margin: 0px;
+    height:100%;
+    background-image: url(./img/back.jpg);
+    background-size: cover;
+}
+.main{
+height:  100%;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+transform-style: preserve-3d;
+perspective: 500px;
+}
+.name{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: aliceblue;
+    border: 3px black solid;
+    border-radius: 25px;
+    padding: 10px 25px 10px 25px ;
+    font-family: "Handjet", sans-serif;
+    font-size: 50px;
+    font-weight: bold;
+    font-style: normal;
+    opacity: 0.8;
+margin-bottom: 40px;
+
+height: auto;
+
+}
+.history{
+    display: flex;
+    background-color: aliceblue;
+    border: 3px black solid;
+    border-radius: 25px;
+    padding: 10px 25px 10px 25px ;
+    font-family: "Handjet", sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+    font-style: normal;
+    opacity: 0.8;
+  width: 65%;
+    height: auto;
+    margin-bottom: 50px;
+    overflow:auto;
+    cursor: url(https://cdn.custom-cursor.com/db/20088/32/color-pixels-funny-cat-cursor.png) , default;
+}
+.nav{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+
+}
+.button{
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    border: 3px black solid;
+    background-color: aliceblue;
+    color: black;
+    font-family: "Handjet", sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    font-style: normal;
+    border-radius: 15px;
+    padding:10px 30px 10px 30px;
+    transition: 900ms;
+    cursor: url(https://cdn.custom-cursor.com/db/20088/32/color-pixels-funny-cat-cursor.png) , default;
+
+}
+.google{
+    
+        display: flex;
+        text-decoration: none;
+        border: 3px black solid;
+        background-color: aliceblue;
+        color: black;
+        font-family: "Handjet", sans-serif;
+        font-size: 30px;
+        font-weight: bold;
+        font-style: normal;
+        border-radius: 15px;
+        padding:10px 30px 10px 30px;
+        transition: 900ms;
+     
+}
+.button:hover ,.google:hover{
+    background-color: rgb(171, 170, 170);
+    font-size: 30px;
+  
+}
+
+.button:focus,.google:hover{
+    background-color: rgb(171, 170, 170);
+    font-size: 30px;
+  
+}
+.rocket{
+
+    width: 40px;
+    animation: fly 3s alternate infinite ;
+
+}
+@keyframes fly {
+    0% {
+        transform: translateY(0px) rotateY(0deg);
+    }
+    
+    100%{
+        transform: translateY(0px) rotateZ(360deg) rotateY(360deg);;
+    }
+}
